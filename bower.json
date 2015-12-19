@@ -1,0 +1,7 @@
+{
+  "name": "most-webchat",
+  "dependencies": {
+    "bootstrap": "~3.3.6",
+    "socket.io-client": "sio-client#~1.3.6"
+  }
+}
