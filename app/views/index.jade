@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  .container-fluid
+    h1= title
+   
+    form#login-form(method='POST', action='/')
+      .form-group
+        p Welcome to #{title}. Log in to this service and start communication
+      .form-group
+        label(for='login') Login:
+        input(type='text', placeholder='Login').form-control#login
+      .form-group
+        button.btn.btn-info.btn-block(type='submit')#signin Sign in
+  script(src='/vendor/socket.io-client/socket.io.js')
+  script(src='/vendor/jquery/dist/jquery.min.js')
+  script(src='/javascripts/main.js')
+

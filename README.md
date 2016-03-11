@@ -1,0 +1,1 @@
+## git/edu/frontend-developer/image-processing

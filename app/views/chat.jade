@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  .container-fluid   
+    form#login-form
+      .form-group
+        span Hello, 
+        span: b#userLogin= login
+      .form-group#chatHistory
+        ul.chat-history.clearfix
+      .form-group
+        input(type='text', placeholder='Your message').form-control#message
+      .form-group
+        button.btn.btn-success.btn-block#send Send
+    script(src='/vendor/socket.io-client/socket.io.js')
+    script(src='/vendor/jquery/dist/jquery.min.js')
+    script(src='/javascripts/main.js')
+
